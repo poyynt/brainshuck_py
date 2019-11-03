@@ -48,8 +48,6 @@ while i < len(content):
 		MEM[INDEX] = ord(sys.stdin.read(1))
 	elif char=="[":
 		LOOPS += [i]
-#		 sys.stderr.write("Loop is not currently supported.\n")
-#		 break
 	elif char=="]":
 		if MEM[INDEX] == 0:
 			i += 1
@@ -57,8 +55,6 @@ while i < len(content):
 			continue
 		else:
 			i = LOOPS[-1]
-#		 sys.stderr.write("Loop is not currently supported.\n")
-#		 break
 	else:
 		pass
 	i += 1
